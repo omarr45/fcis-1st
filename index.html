@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to FCIS 2023 - 1st Semester, where you can
+    find all the materials you want"
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>FCIS 2023 - 1st Semester</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">FCIS 2023 <sup>1st</sup></a></h1>
+    </header>
+    <main class="container">
+      <div class="links">
+        <a href="/c01.html" >Calculus 01</a>
+        <a href="#" >Physics 01</a>
+        <a href="/eng.html" >English 01</a>
+        <a href="/psy.html" >Psychology</a>
+        <a href="/intro.html" >Intro to CS</a>
+        <a href="/prob.html" >Probability & Statistics</a>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      Developed and maintained by
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
+    </footer>
+
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
+  </body>
+  <script>
+    const disabledLinks = document.querySelectorAll('.disabled');
+    disabledLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+      link.setAttribute('title', 'Coming Soon');
+    });
+  </script>
+</html>
