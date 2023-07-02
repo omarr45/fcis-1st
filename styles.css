@@ -62,9 +62,7 @@ a {
   color: inherit;
 }
 
-a[href^="http"]::after,
-a[href^="https://"]::after
-{
+a[target='_blank']::after {
   content: '';
   width: 1rem;
   height: 1rem;
@@ -86,6 +84,8 @@ header {
 }
 
 header a {
+  font-weight: bold;
+  font-size: clamp(2.25rem, 8vw, 3rem);
   text-decoration: none;
   transition: letter-spacing 0.2s ease-in-out;
 }
@@ -111,6 +111,11 @@ h2:first-child {
   min-height: 530px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.banner img {
+  object-fit: contain;
+  width: 100%;
 }
 
 .links {
@@ -149,6 +154,11 @@ footer {
 footer a {
   text-decoration: none;
   color: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 @media (max-width: 500px) {
